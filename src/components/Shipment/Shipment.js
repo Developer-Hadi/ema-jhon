@@ -31,7 +31,7 @@ const Shipment = () => {
                 Shipment: shipInfo,
                 payment: payment
             };
-            fetch('http://localhost:2200/placeOrder', {
+            fetch('https://powerful-badlands-16675.herokuapp.com/placeOrder', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

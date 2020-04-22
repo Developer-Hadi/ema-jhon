@@ -18,7 +18,7 @@ const Review = () => {
         const savedCart = getDatabaseCart();
         const productKeys = Object.keys(savedCart);
         console.log(productKeys);
-        fetch('http://localhost:2200/getProductsByKey', {
+        fetch('https://powerful-badlands-16675.herokuapp.com/getProductsByKey', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

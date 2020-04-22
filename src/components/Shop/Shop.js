@@ -11,7 +11,7 @@ const Shop = () => {
     const [cart, setCart] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:2200/products')
+        fetch('https://powerful-badlands-16675.herokuapp.com/products')
         .then(res => res.json())
         .then(data => {
             setProducts(data);
